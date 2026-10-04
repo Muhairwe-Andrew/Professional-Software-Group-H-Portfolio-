@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Software Engineering Group</title>
+    <link rel="stylesheet" href="styleContact.css" />
+  </head>
+  <body>
+    <!--Header identifies th contact page.-->
+    <header>
+    <h1>Contact Us</h1>
+     <!--Navigation coonects all five portfolio pages using relative hyperlinks-->
+      <nav>
+      <a href="index.html ">Home</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="data.html">Data</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <!--Main contains the contact form and its instructions.-->
+  <main>
+    <section>
+      <h2>Get in Touch</h2>
+    <p>
+      If you have any questions, feel free to reach out to us by filling the
+      form below:
+    </p>
+    <!--The form uses labels and html5 input types for accessibility and validaton-->
+    <form action="#" method="post">
+      <p>
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter Your Full Name "
+          autocomplete="name"
+          required
+        />
+      </p>
+      <p>
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="e.g timcook@gmail.com"
+          autocomplete="email"
+          required
+        />
+      </p>
+      <p>
+        <label for="phone">Phone:</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          value="+256"
+          autocomplete="tel"
+          required
+        />
+      </p>
+      <p>
+        <label for="message">Message:</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Type your message here..."
+          required
+        ></textarea>
+      </p>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+</main>
+<!--Footer provides closing information and a contact link-->
+    <footer>
+      <p>
+        &copy; 2026 Software Engineering Group.
+        <a href="contact.html">Contact Us</a>
+      </p>
+    </footer>
+  </body>
+</html>
